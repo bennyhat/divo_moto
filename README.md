@@ -3,8 +3,7 @@
 
 # Divo moto
 
-A library implementing the Divo Stack behaviour, providing a pre-configured moto
-cluster via docker-compose for integration testing Elixir apps. The cluster is a
+A library implementing the Divo Stack behaviour, providing a pre-configured moto server via docker-compose for integration testing Elixir apps. The cluster is a
 multi-service moto compose stack that can be configured with all or specific services.
 
 Requires inclusion of the Divo library in your mix project.
