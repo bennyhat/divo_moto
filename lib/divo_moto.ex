@@ -29,7 +29,7 @@ defmodule DivoMoto do
 
     %{
       moto_server: %{
-        image: "moto-full:#{moto_image_version}",
+        image: "bennyhat/moto-server:#{moto_image_version}",
         environment: [
           "PORT=#{port}",
           "AWS_ACCESS_KEY_ID=#{aws_access_key_id}",
