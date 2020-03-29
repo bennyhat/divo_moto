@@ -16,7 +16,7 @@ The package can be installed by adding `divo` and `divo_moto` to your list of de
 def deps do
   [
     {:divo, "~> 1.1"},
-    {:divo_moto, "~> 0.1.0"}
+    {:divo_moto, "~> 0.1.1"}
   ]
 end
 ```
