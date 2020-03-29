@@ -57,5 +57,41 @@ See [Divo GitHub](https://github.com/smartcitiesdata/divo) or [Divo Hex Document
 See [bennyhat/moto-server](https://github.com/bennyhat/docker-moto-server) for further documentation
 on using and configuring the features of this image.
 
+### Example
+Below is an example configuration file that configures `Divo` and `DivoMoto` to stand up a multi-service moto server and then configures [ExAws](https://github.com/ex-aws/ex_aws) to point to it.
+```elixir
+use Mix.Config
+
+access_key_id = "server_key"
+secret_access_key = "server_secret"
+port = 5000
+
+config :alb_ingress, divo: [
+  {DivoMoto,
+   [
+     port: port,
+     service: :all,
+     aws_access_key_id: access_key_id,
+     aws_secret_access_key: secret_access_key
+   ]
+  }
+]
+
+config :ex_aws,
+  debug_requests: true,
+  access_key_id: access_key_id,
+  secret_access_key: secret_access_key,
+  ec2: [
+    scheme: "http://",
+    host: "localhost",
+    port: port
+  ],
+  elasticloadbalancing: [
+    scheme: "http://",
+    host: "localhost",
+    port: port
+  ]
+```
+
 ## License
 Released under [Apache 2 license](https://github.com/bennyhat/divo_moto/blob/master/LICENSE).
