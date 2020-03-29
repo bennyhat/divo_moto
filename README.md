@@ -1,4 +1,4 @@
-[![Master](https://travis-ci.org/bennyhat/divo_moto.svg?branch=master)](https://travis-ci.org/bennyhat/divo_moto)
+[![Master](https://github.com/bennyhat/divo_moto/workflows/Master/badge.svg)](https://github.com/bennyhat/divo_moto/actions?query=workflow%3AMaster)
 [![Hex.pm Version](http://img.shields.io/hexpm/v/divo_moto.svg?style=flat)](https://hex.pm/packages/divo_moto)
 
 # Divo moto
