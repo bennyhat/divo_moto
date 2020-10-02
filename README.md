@@ -54,7 +54,7 @@ You may omit the configuration arguments to DivoMoto and still have a working st
 * `moto_image_version`: A string representing the moto image ([bennyhat/moto-server](https://hub.docker.com/r/bennyhat/moto-server)) version to use. A list of available versions can be found on their [dockerhub tags page](https://hub.docker.com/r/bennyhat/moto-server/tags). Defaults to `"latest"`.
 
 See [Divo GitHub](https://github.com/smartcitiesdata/divo) or [Divo Hex Documentation](https://hexdocs.pm/divo) for more instructions on using and configuring the Divo library.
-See [bennyhat/moto-server](https://github.com/bennyhat/docker-moto-server) for further documentation
+See [bennyhat/moto-server](https://hub.docker.com/r/bennyhat/moto-server) for further documentation
 on using and configuring the features of this image.
 
 ### Example
